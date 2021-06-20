@@ -1,0 +1,47 @@
+:host {
+    padding: 1em;
+    width: 300px;
+}
+
+.card {
+    border: 1px solid #eee;
+    width: 100%;
+    text-align: center;
+    /* max-width: 400px; */
+}
+
+.image-holder {
+    height: 400px;
+    overflow: hidden;
+}
+
+.card img {
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+    transition: all 0.3s ease-out;
+}
+
+.card img:hover {
+    transform: scale(1.2);
+}
+
+.card .label {
+    font-size: 2em;
+    margin: 10px 0 14px 0;
+}
+
+.view-button {
+    padding: 1em;
+    background: lightblue;
+    border: 0;
+    width: 100%;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.view-button:hover {
+    background: teal;
+    color: white;
+}

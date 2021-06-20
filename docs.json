@@ -1,0 +1,138 @@
+{
+  "timestamp": "2021-06-12T15:48:47",
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "2.6.0",
+    "typescriptVersion": "4.2.3"
+  },
+  "components": [
+    {
+      "filePath": "./src/components/card/card.tsx",
+      "encapsulation": "shadow",
+      "tag": "pa-card",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "cardData",
+          "type": "string",
+          "mutable": false,
+          "attr": "card-data",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [
+            {
+              "text": "-- card data prop (passed as JSON string to be parsed)",
+              "name": "prop"
+            }
+          ],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [
+        {
+          "event": "cardViewSelected",
+          "detail": "CardData",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "custom event to emit value",
+          "docsTags": [
+            {
+              "text": "card object",
+              "name": "returns"
+            }
+          ]
+        }
+      ],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "pa-card-list"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "pa-card-list": [
+          "pa-card"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/card-list/card-list.tsx",
+      "encapsulation": "shadow",
+      "tag": "pa-card-list",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [
+        "pa-card"
+      ],
+      "dependencyGraph": {
+        "pa-card-list": [
+          "pa-card"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/header/header.tsx",
+      "encapsulation": "none",
+      "tag": "pa-header",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/modal/modal.tsx",
+      "encapsulation": "shadow",
+      "tag": "pa-modal",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "listeners": [
+        {
+          "event": "cardViewSelected",
+          "target": "body",
+          "capture": false,
+          "passive": false
+        }
+      ],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    }
+  ]
+}
